@@ -6,5 +6,7 @@
 
 sudo apt install autoconf automake xutils-dev libtool libpixman-1-dev x11proto-bigreqs-dev x11proto-composite-dev \
 		 x11proto-dri3-dev x11proto-present-dev x11proto-resource-dev x11proto-scrnsaver-dev x11proto-fonts-dev \
-		 x11proto-xf86dri-dev x11proto-xcmisc-dev x11proto-record-dev xfonts-utils x11-xkb-utils libxfont-dev
+		 x11proto-xf86dri-dev x11proto-xcmisc-dev x11proto-record-dev xfonts-utils x11-xkb-utils libxfont-dev \
+		 libgl1-mesa-dev freeglut3-dev mesa-common-dev
+
          
