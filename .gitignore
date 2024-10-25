@@ -80,3 +80,6 @@ core
 doltcompile
 doltlibtool
 xserver.ent
+
+!build.sh
+!install_depends_ubuntu22.sh
