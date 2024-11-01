@@ -882,7 +882,7 @@ CreateSolidPicture(Picture pid, xRenderColor * color, int *error)
     }
 
     pPicture->id = pid;
-    pPicture->pSourcePict = (SourcePictPtr) malloc(sizeof(PictSolidFill));
+    pPicture->pSourcePict = (SourcePictPtr) malloc(sizeof(SourcePict));
     if (!pPicture->pSourcePict) {
         *error = BadAlloc;
         free(pPicture);
@@ -912,7 +912,7 @@ CreateLinearGradientPicture(Picture pid, xPointFixed * p1, xPointFixed * p2,
     }
 
     pPicture->id = pid;
-    pPicture->pSourcePict = (SourcePictPtr) malloc(sizeof(PictLinearGradient));
+    pPicture->pSourcePict = (SourcePictPtr) malloc(sizeof(SourcePict));
     if (!pPicture->pSourcePict) {
         *error = BadAlloc;
         free(pPicture);
@@ -952,7 +952,7 @@ CreateRadialGradientPicture(Picture pid, xPointFixed * inner,
     }
 
     pPicture->id = pid;
-    pPicture->pSourcePict = (SourcePictPtr) malloc(sizeof(PictRadialGradient));
+    pPicture->pSourcePict = (SourcePictPtr) malloc(sizeof(SourcePict));
     if (!pPicture->pSourcePict) {
         *error = BadAlloc;
         free(pPicture);
@@ -995,7 +995,7 @@ CreateConicalGradientPicture(Picture pid, xPointFixed * center, xFixed angle,
     }
 
     pPicture->id = pid;
-    pPicture->pSourcePict = (SourcePictPtr) malloc(sizeof(PictConicalGradient));
+    pPicture->pSourcePict = (SourcePictPtr) malloc(sizeof(SourcePict));
     if (!pPicture->pSourcePict) {
         *error = BadAlloc;
         free(pPicture);
